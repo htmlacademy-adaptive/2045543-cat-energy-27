@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+    <base href="https://htmlacademy-adaptive.github.io/2045543-cat-energy-27/2/">
+</head>
+  <html class="page" lang="ru">
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img src="/source/img/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи.">
+        <img src="/source/img/cat.svg">
+      </a>
+        <button class="main-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      <h1 class="main-header__title">Подбор программы</h1>
+      <h2 class="main-header__slogan">
+        Заполните анкету, и мы подберем
+        программу питания для вашего кота
+      </h2>
+    </header>
+    <main class="main-container">
+      <section class="modal">
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-name">ИМЯ:*</label>
+          <input class="modal__input modal__input--icon-name" id="user-name" type="text" name="name" placeholder="Барсик">
+        </p>
+        <p>
+          <label class="visually-hidden" for="heft-name">Вес (кг):*</label>
+          <input class="modal__input modal__input--icon-heft" id="user-heft" type="heft" name="heft" placeholder="7">
+        </p>
+        <p>
+          <label class="visually-hidden" for="age-name">Возраст (лет):</label>
+          <input class="modal__input modal__input--icon-age" id="user-age" type="age" name="age" placeholder="7">
+        </p>
+      </form>
+    </section>
+    <section class="goal">
+      <h2 class="visually-hidden">Цель</h2>
+      <form class="goal__form" action="https://echo.htmlacademy.ru" method="post">
+        <label>
+          <input class="goal__input goal__input--icon-loss" type="radio" name="question-one" value="p"> Похудение
+        </label>
+        <label>
+          <input class="goal__input goal__input--icon-mass" type="radio" name="question-one" value="b"> Набор массы
+        </label>
+        <label>
+          <input class="goal__input goal__input--icon-help" type="radio" name="question-one" value="h"> Не знаю (Нужен ваш совет)
+        </label>
+      </form>
+    </section>
+    <section class="user">
+      <h2 class="user-title">Контактные данные
+        (владельца кота)</h2>
+      <p>
+      <label class="visually-hidden" for="email">E-mail:*</label>
+      <input type="email" name="email" required placeholder="kuklachev@gmail.com">
+      </p>
+      <p>
+      <label class="visually-hidden" for="tel">Телефон:*</label>
+          <input type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="8 (960) 900-60-90">
+      </p>
+    </section>
+    <section class="feedback">
+      <h2 class="feedback-title">Комментарий</h2>
+      <p>
+        <textarea name="comment">Расскажите обо всех повадках кота</textarea>
+      </p>
+    </section>
+    <section class="service">
+      <h2 class="service-tittle">Дополнительно</h2>
+      <form class="service" action="https://echo.htmlacademy.ru" method="post">
+        <label>
+          <input class="service__input service__input--icon-sweetener" type="radio" name="sweetener" value="a"> cахарозаменитель
+        </label>
+        <label>
+          <input class="service__input service__input--icon-water" type="radio" name="water" value="b"> питьевая вода
+        </label>
+        <label>
+          <input class="service__input service__input--icon-milk" type="radio" name="milk" value="v"> молоко
+        </label>
+        <label>
+          <input class="service__input service__input--icon-vitamins" type="radio" name="vitamins" value="g"> витамины
+        </label>
+      </form>
+    </section>
+    <section class="cooperation">
+      <div class="cooperation__wrapper">
+        <h2 class="visually-hidden">Cотрудничество</h2>
+         <p class="cooperation__text">Приглашаем к сотрудничеству дилеров! </p>
+         <p class="cooperation-adress">ул. Большая
+          Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+          <a class="cooperation__map">
+            <img src="/source/img/location.svg" width="768" height="400" alt="Карта">
+          </a>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <a class="main-footer__logo">
+        <img src="/source/img/footer-logo-2.png" width="128" height="24" alt="Логотип магазина">
+      </a>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <img src="/source/img/htmlacademy.svg" width="163" height="34" alt="Логотип магазина">
+      </div>
+  </footer>
+  </body>
+</html>
