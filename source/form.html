@@ -23,22 +23,20 @@
       <section class="modal">
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label class="visually-hidden" for="user-name">ИМЯ:*</label>
-          <input class="modal__input modal__input--icon-name" id="user-name" type="text" name="name" placeholder="Барсик">
+          <label class="modal__label" for="cat-name">Имя:*</label>
+          <input class="modal__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required>
         </p>
         <p>
-          <label class="visually-hidden" for="heft-name">Вес (кг):*</label>
-          <input class="modal__input modal__input--icon-heft" id="user-heft" type="heft" name="heft" placeholder="7">
+          <label class="modal__label form__label--weight" for="cat-weight">Вес&nbsp;(кг):*</label>
+          <input class="modal__input" id="cat-weight" type="number" name="cat-weight" placeholder="7" required>
         </p>
         <p>
-          <label class="visually-hidden" for="age-name">Возраст (лет):</label>
-          <input class="modal__input modal__input--icon-age" id="user-age" type="age" name="age" placeholder="7">
+          <label class="modal__label form__label--age" for="cat-age">Возраст&nbsp;(лет):</label>
+          <input class="modal__input" id="cat-age" type="number" name="cat-age" placeholder="7">
         </p>
-      </form>
     </section>
     <section class="goal">
       <h2 class="visually-hidden">Цель</h2>
-      <form class="goal__form" action="https://echo.htmlacademy.ru" method="post">
         <label>
           <input class="goal__input goal__input--icon-loss" type="radio" name="question-one" value="p"> Похудение
         </label>
@@ -48,42 +46,42 @@
         <label>
           <input class="goal__input goal__input--icon-help" type="radio" name="question-one" value="h"> Не знаю (Нужен ваш совет)
         </label>
-      </form>
     </section>
     <section class="user">
       <h2 class="user-title">Контактные данные
         (владельца кота)</h2>
-      <p>
-      <label class="visually-hidden" for="email">E-mail:*</label>
-      <input type="email" name="email" required placeholder="kuklachev@gmail.com">
-      </p>
-      <p>
-      <label class="visually-hidden" for="tel">Телефон:*</label>
-          <input type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="8 (960) 900-60-90">
-      </p>
+        <p>
+        <label class="user__label user__label--email" for="owner-email">E&#8209;mail:*</label>
+        <input class="user__input user__input--email" id="owner-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required>
+        </p>
+        <p>
+          <label class="user__label user__label--phone" for="owner-phone">Телефон:*</label>
+          <input class="user__input user__input--phone" id="owner-phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" required>
+        </p>
     </section>
     <section class="feedback">
-      <h2 class="feedback-title">Комментарий</h2>
-      <p>
-        <textarea name="comment">Расскажите обо всех повадках кота</textarea>
-      </p>
+      <h2 class="feedback__title">Комментарий</h2>
+      <textarea class="feedback__input feedback__input--comment" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
     </section>
     <section class="service">
-      <h2 class="service-tittle">Дополнительно</h2>
-      <form class="service" action="https://echo.htmlacademy.ru" method="post">
-        <label>
-          <input class="service__input service__input--icon-sweetener" type="radio" name="sweetener" value="a"> cахарозаменитель
-        </label>
-        <label>
-          <input class="service__input service__input--icon-water" type="radio" name="water" value="b"> питьевая вода
-        </label>
-        <label>
-          <input class="service__input service__input--icon-milk" type="radio" name="milk" value="v"> молоко
-        </label>
-        <label>
-          <input class="service__input service__input--icon-vitamins" type="radio" name="vitamins" value="g"> витамины
-        </label>
-      </form>
+      <h2 class="-tittle">Дополнительно</h2>
+      <p>
+        <input class="visually-hidden service__checkbox" id="sweetener" type="checkbox" name="sweetener" checked>
+        <label class="service__label service_label--checkbox" for="sweetener">Сахарозаменитель</label>
+      </p>
+      <p>
+        <input class="visually-hidden service__checkbox" id="water" type="checkbox" name="water">
+        <label class="service__label service__label--checkbox" for="water">Питьевая вода</label>
+      </p>
+      <p>
+        <input class="visually-hidden service__checkbox" id="milk" type="checkbox" name="milk">
+        <label class="service__label service__label--checkbox" for="milk">Молоко</label>
+      </p>
+
+      <p>
+        <input class="visually-hidden service__checkbox" id="vitamins" type="checkbox" name="vitamins">
+        <label class="service__label service__label--checkbox" for="vitamins">Витамины</label>
+      </p>
     </section>
     <section class="cooperation">
       <div class="cooperation__wrapper">
@@ -96,6 +94,7 @@
           </a>
       </div>
     </section>
+  </form>>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
@@ -105,13 +104,13 @@
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="visually-hidden" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+            <a class="visually-hidden" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+            <a class="visually-hidden" href="https://t.me/htmlacademy">Мы в Телеграме</a>
           </li>
         </ul>
       </div>
