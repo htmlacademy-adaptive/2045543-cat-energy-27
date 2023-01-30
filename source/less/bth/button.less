@@ -1,0 +1,40 @@
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  padding: 15px 25px;
+  vertical-align: middle;
+  font-family: inherit;
+  text-align: center;
+  width: 100%;
+}
+
+.btn--green {
+  background-color: @green-primary;
+  color: @white;
+
+  &:hover,
+  &:focus {
+    background-color: @green-secondary;
+  }
+
+  &:active {
+    color: rgba(@white, 0.3);
+  }
+}
+
+.btn--gray {
+  background-color: @gray-lightest;
+  color: @gray-darken;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(@gray-darken, 0.3);
+  }
+}
